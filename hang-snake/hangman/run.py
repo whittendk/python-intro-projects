@@ -1,4 +1,4 @@
-from common.util import clear_terminal
+import os
 import random
 import graphics as graph
 import words
@@ -44,7 +44,7 @@ while tries > 0:
         incorrect.append(letter)
         tries -= 1
 
-
+    os.system('cls')
     print(graph.img[-tries+6])
     print(*word_arr)
     print('incorrect letters:', *incorrect)
